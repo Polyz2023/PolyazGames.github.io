@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Polyaz Games: password</title>
+	<style>
+		body{
+			background-color:#141414;
+		}
+		p{
+			color: whitesmoke;
+			font-size: 17px;
+			margin-left: 5%;
+		}
+		h1{
+			color: whitesmoke;
+			margin-left: 40%;
+		}
+		div{
+			box-shadow: 0px 0px 20px 10px #04012e;
+			height: 320px;
+			width: 320px;
+			margin-top: 10%;
+			margin-left: 40%;
+		}
+		input{
+			background: #242424;
+			width: 200px;
+			height: 20px;
+			color: whitesmoke;
+			margin-left: 50px;
+		}
+		button{
+			background: #242424;
+			color: whitesmoke;
+			width: 100px;
+			height: 30px;
+			margin-left: 100px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!--<p><a href="cago.png" download>fee</a></p>
+	<p><a href="g.exe" download>f</a></p>-->
+	<div>
+		<h1>Hi!</h1>
+		<p>Do you want play with the Polyaz games?</p>
+		<p>If you wont, write the password for free installing the game!</p>
+		<input type="text" id="password1">
+		<button onclick="passw()">Open site!</button>
+		<p style="display: none;" id="ps1"><a href="offsite.html">You can open site for click on this text</a></p>
+	</div>
+
+	<script>
+		function passw() {
+			let vaspar = document.getElementById('password1').value;
+			if (vaspar=='5*^wznnvku60ml!*fd@$'){
+                document.getElementById('ps1').style.display = 'block'
+			} else {
+				alert('No!It is a not true password')
+			}
+		}
+	</script>
+
+</body>
+</html>
